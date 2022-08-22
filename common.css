@@ -1,0 +1,354 @@
+@import url(‘https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    background-color: #202124;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+i {
+    color: #f0f8ff;
+}
+
+.top-nav-container{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    height: 60px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.top-nav-items{
+    display: inline-block;
+    flex-grow: 1;
+}
+
+.top-nav-align{
+    min-width: auto;
+    z-index: 50;
+    height: 48px;
+    position: relative;
+    transition: box-shadow 250ms;
+}
+
+.top-nav-links-container{
+    display: flex;
+    float: right;
+    padding-left: 32px;
+    box-sizing: border-box;
+    height: 48px;
+    padding: 0 4px;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+    vertical-align: middle;
+    white-space: nowrap;
+    align-items: center;
+    -webkit-box-align: center;
+    user-select: none;
+}
+
+.top-nav-left{
+    display: block;
+}
+
+.left-links{
+    line-height: normal;
+    padding-right: 15px;
+
+}
+
+.top-link-container{
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.top-link{
+    color: white;
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.top-nav-right {
+    color: #f0f8ff;
+    position: relative;
+    float: right;
+}
+
+.google-icon{
+    flex: 0 1 auto;
+    padding: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.google-icon-container{
+    flex: 0 1 auto;
+    position: relative;
+}
+
+.link{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 4px;
+    flex: 0 1 auto;
+    border-radius: 50%;
+    display: inline-block;
+    outline: none;
+    vertical-align: middle;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+}
+
+#account-icon{
+    background-size: 32px 32px;
+    border: 0;
+    border-radius: 50%;
+    display: block;
+    margin: 0px;
+    position: relative;
+    height: 32px;
+    width: 32px;
+    z-index: 0;
+}
+
+.google-title {
+    color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 92px;
+    max-height: 290px;
+    box-sizing: border-box;
+    height: calc(100% - 560px);
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.search-container {
+    display: flex;
+    z-index: 3;
+    height: 44px;
+    background-color: #202124;
+    border: 1px solid #5f6368;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 584px;
+    padding: 5px;
+}
+
+.search-container:hover {
+    background-color: #303134;
+}
+
+#mic,
+.microphone,
+.left-padding,
+.microphone-container,
+#search-text,
+.text-container,
+.text-area-container,
+#search-icon,
+.search-icon-center,
+#search-icon-span,
+.search-icon-container,
+.search-center {
+    background-color: transparent;
+}
+
+.search-center {
+    display: flex;
+    flex: 1;
+    padding: 5px 8px 0 14px;
+}
+
+.search-icon-container {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+}
+
+.search-icon-center {
+    margin: auto;
+}
+
+#search-icon-span {
+    margin-top: 3px;
+    color: #9aa0a6;
+    display: inline-block;
+    fill: currentColor;
+    position: relative;
+}
+
+#search-icon {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+}
+
+.text-area-container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.text-container {
+    border-radius: 10px;
+    color: transparent;
+    flex: 100%;
+    height: 34px;
+    font-size: 16px;
+}
+
+#search-text {
+    border-radius: 10px;
+    display: flex;
+    flex: 100%;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: -37px;
+    height: 34px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: #e8eaed;
+    word-wrap: break-word;
+    outline: none;
+}
+
+.microphone-container {
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: -5px;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.left-padding {
+    padding-right: 4px;
+    background: transparent;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 auto;
+    cursor: pointer;
+}
+
+.microphone {
+    display: flex;
+    flex: 1 0 auto;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    width: 24px;
+    line-height: 44px;
+}
+
+#mic {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+}
+
+#buttons {
+    margin: auto;
+}
+
+button {
+    background-color: #3a3636;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    border: none;
+}
+
+button:hover {
+    border: 1px solid #e8eaed;
+}
+
+button a {
+    text-decoration: none;
+    color: #f0f8ff;
+    background-color: #3a3636;
+    font-size: 14px;
+}
+
+.button-one {
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin: auto;
+}
+
+.button-two {
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.additional-links {
+    color: #e8eaed;
+    display: block;
+    font-size: 14px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+#bottom-links {
+    display: inline-block;
+    line-height: 28px;
+    font-size: small;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+#language {
+    padding: 0 3px;
+    color: #8ab4f8;
+    text-decoration: none;
+}
+
+#language:hover {
+    text-decoration: underline;
+}
